@@ -1,0 +1,560 @@
+/* ============================================
+   DASHBOARD SPECIFIC STYLES
+   ============================================ */
+
+.bg-gradient {
+    background: var(--gradient-primary) !important;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #047857 0%, #059669 100%) !important;
+    box-shadow: var(--shadow-md);
+}
+
+.navbar-dark {
+    background: linear-gradient(90deg, #047857 0%, #059669 100%) !important;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo i {
+    font-size: 28px;
+}
+
+.btn-nav {
+    color: rgba(255, 255, 255, 0.85) !important;
+    background: none !important;
+    border: none !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem !important;
+}
+
+.btn-nav:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link {
+    margin: 0 5px;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    padding: 30px 0;
+    position: fixed;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    left: 0;
+    top: 70px;
+    box-shadow: var(--shadow-sm);
+    z-index: 100;
+}
+
+.sidebar-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.sidebar-header h5 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: var(--text-secondary);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background: var(--light-green);
+    color: var(--primary-green);
+    border-left-color: var(--primary-green);
+}
+
+.sidebar-link.active {
+    background: var(--light-green);
+    color: var(--primary-green);
+    border-left-color: var(--primary-green);
+}
+
+.sidebar-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px;
+    padding: 40px;
+    flex: 1;
+}
+
+.page-header {
+    margin-bottom: 40px;
+}
+
+.page-title {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 32px;
+}
+
+.page-title i {
+    color: var(--primary-green);
+    font-size: 36px;
+}
+
+.page-subtitle {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ============================================
+   CARDS & COMPONENTS
+   ============================================ */
+
+.modern-card {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    background: var(--card-bg);
+}
+
+.modern-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-green);
+}
+
+.card-header {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-footer {
+    padding: 15px 25px;
+    border-top: 1px solid var(--border-color);
+    background: white;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Stat Cards */
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-green);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    min-width: 60px;
+}
+
+.stat-icon.bg-primary { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+.stat-icon.bg-success { background: var(--gradient-primary); }
+.stat-icon.bg-warning { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); }
+.stat-icon.bg-info { background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); }
+
+.stat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 5px 0 0;
+}
+
+/* Tables */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+    padding: 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background: var(--light-green);
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+    color: var(--text-primary);
+}
+
+.table-responsive {
+    border: none;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.btn-outline-primary {
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: white;
+}
+
+/* Badge */
+.badge {
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.bg-success-light {
+    background: var(--light-green);
+    color: var(--primary-green);
+}
+
+.bg-info-light {
+    background: #dbeafe;
+    color: #0c4a6e;
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+
+.form-control, .form-select {
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.15);
+    color: var(--text-primary);
+}
+
+.form-control-lg, .form-select-lg {
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+/* ============================================
+   NUTRIENT LIST
+   ============================================ */
+
+.nutrient-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nutrient-item {
+    background: var(--light-green);
+    border-left: 4px solid var(--primary-green);
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nutrient-item:hover {
+    background: var(--light-green);
+    transform: translateX(5px);
+}
+
+.nutrient-name {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.nutrient-count {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+
+.pagination {
+    gap: 10px;
+}
+
+.page-link {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.page-link:hover {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+    color: white;
+}
+
+.page-item.active .page-link {
+    background: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+/* ============================================
+   ALERTS
+   ============================================ */
+
+.alert {
+    border-radius: 12px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-success {
+    background: var(--light-green);
+    color: var(--dark-green);
+    border-left: 4px solid var(--primary-green);
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #991b1b;
+    border-left: 4px solid #dc2626;
+}
+
+.alert-warning {
+    background: #fef3c7;
+    color: #92400e;
+    border-left: 4px solid #fbbf24;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 250px;
+    }
+    
+    .main-content {
+        margin-left: 250px;
+        padding: 30px;
+    }
+    
+    .page-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        width: 250px;
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .page-header {
+        margin-bottom: 25px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .page-title {
+        font-size: 20px;
+    }
+    
+    .stat-value {
+        font-size: 24px;
+    }
+    
+    .table {
+        font-size: 13px;
+    }
+    
+    .btn-sm {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+    
+    .page-header {
+        margin-bottom: 20px;
+    }
+}

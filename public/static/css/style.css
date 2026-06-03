@@ -1,0 +1,343 @@
+/* ============================================
+   NUTRITION ANALYTICS - MODERN STYLING
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors - Nutrition Theme */
+    --primary-green: #10b981;
+    --secondary-green: #059669;
+    --light-green: #ecfdf5;
+    --dark-green: #047857;
+    
+    /* Accent Colors */
+    --accent-orange: #f97316;
+    --accent-yellow: #eab308;
+    --accent-blue: #3b82f6;
+    --accent-purple: #a855f7;
+    
+    /* Neutral Colors */
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --gradient-accent: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+p {
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--primary-green);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-green);
+}
+
+/* ============================================
+   LOGIN PAGE
+   ============================================ */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.login-container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    pointer-events: auto;
+}
+
+.login-box {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease;
+    position: relative;
+    z-index: 100;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+
+.brand-title {
+    color: var(--text-primary);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.brand-subtitle {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 100;
+    position: relative;
+    pointer-events: auto;
+}
+
+.form-control, .form-select {
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    pointer-events: auto !important;
+    cursor: text !important;
+    position: relative;
+    z-index: 100;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(16, 185, 129, 0.15);
+}
+
+.btn-login {
+    background: var(--gradient-primary);
+    border: none;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 14px 24px;
+    transition: all 0.3s ease;
+    color: white;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative;
+    z-index: 100;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+    color: white;
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+/* Form Group and Form Elements */
+form, .form-group {
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.demo-info {
+    background: var(--light-green);
+    border-left: 4px solid var(--primary-green);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.demo-info p {
+    margin-bottom: 5px;
+}
+
+/* Background Animation */
+.background-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: white;
+    top: -100px;
+    right: -100px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background: white;
+    bottom: -50px;
+    left: -50px;
+    animation: float 8s ease-in-out infinite 2s;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    background: white;
+    top: 50%;
+    left: 10%;
+    animation: float 7s ease-in-out infinite 1s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(30px); }
+}
+
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .login-box {
+        padding: 40px 30px;
+    }
+    
+    .login-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .brand-title {
+        font-size: 22px;
+    }
+    
+    .login-box {
+        padding: 30px 20px;
+    }
+    
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-success { color: var(--primary-green) !important; }
+.text-muted { color: var(--text-secondary) !important; }
+
+.bg-light { background: var(--light-bg) !important; }
+
+.border-primary { border-color: var(--primary-green) !important; }
+
+.cursor-pointer { cursor: pointer; }
+
+.no-select { user-select: none; }

@@ -1,0 +1,249 @@
+F1,Fruits and Fruit Juice,,,,,,,
+,Macronutrients,,ENERGY_KC ,PROCNT,A_PROTEI ,MFP_PROT,FAT,CHOCDF
+,,,Kcal,g,g,g,g,g
+129,"Apples, raw, with skin",,52.0,0.2,0.0,0.0,0.2,13.8
+101,"Avocado, raw, all common variety",,160.0,2.0,0.0,0.0,14.7,8.5
+102,"Banana, ripe",,89.0,1.1,0.0,0.0,0.3,22.8
+103,"Baobab, pulp",,305.0,4.2,0.0,0.0,1.3,77.8
+365,"Breadfruit, raw",,103.0,1.1,0.0,0.0,0.2,27.1
+131,"Custard-apple (bullock's heart), raw",,101.0,1.7,0.0,0.0,0.6,25.2
+133,"Date, red, dried",,240.0,2.6,0.0,0.0,0.4,63.3
+134,"Date, yellow",,84.0,0.3,0.0,0.0,0.6,21.7
+130,Durian,,147.0,1.5,0.0,0.0,5.3,27.1
+104,Grape,,55.0,0.2,0.0,0.0,0.4,14.2
+135,Grapefruit,,33.0,0.7,0.0,0.0,0.1,8.4
+105,"Grapes, pale green",,59.0,0.2,0.0,0.0,0.4,15.3
+106,"Guavas, common, raw",,68.0,2.6,0.0,0.0,1.0,14.3
+107,"Jackfruit, raw",,94.0,1.5,0.0,0.0,0.3,24.0
+109,"Lemon, raw, without peel",,29.0,1.1,0.0,0.0,0.3,9.3
+110,"Limes, raw",,30.0,0.7,0.0,0.0,0.2,10.5
+111,Mango juice,,54.0,0.2,0.0,0.0,0.1,14.1
+112,"Mango, ripe, fresh-EP",,65.0,0.5,0.0,0.0,0.3,17.0
+113,"Mango, unripe",,65.0,0.5,0.0,0.0,0.3,17.0
+108,"Orange juice, concentrated, unsweetened",,42.0,0.6,0.0,0.0,0.1,9.9
+114,"Orange, raw - AP",,47.0,0.9,0.0,0.0,0.1,11.8
+115,"Papaya, ripe",,39.0,0.6,0.0,0.0,0.1,9.8
+116,"Papaya, unripe",,39.0,0.6,0.0,0.0,0.1,9.8
+117,"Passion, fruit",,43.0,0.7,0.0,0.0,0.1,11.1
+127,Peach,,39.0,0.6,0.0,0.0,0.1,10.0
+118,"Pears, raw",,58.0,0.4,0.0,0.0,0.1,15.5
+120,Pineapple juice,,49.0,0.4,0.0,0.0,0.4,12.4
+,,,,,,,,
+F1,Fruits and Fruit Juice,,,,,,,
+,Macronutrients,FASAT,FAMS,FAPU,CHOLE,FIB,SUCS,PHYTAC
+,,g,g,g, mg,g,g,mg
+,,,,,,,,
+129,"Apples, raw, with skin",0.0,0.0,0.1,0.0,2.4,10.4,55.0
+101,"Avocado, raw, all common variety",2.1,9.8,1.8,0,6.7,0.7,0.0
+102,"Banana, ripe",0.1,0.0,0.1,0.0,2.6,12.2,0.0
+103,"Baobab, pulp",0.4,0.1,0.4,0.0,5.1,0.6,0.0
+365,"Breadfruit, raw",0.0,0.0,0.1,0.0,4.9,11.0,0.0
+131,"Custard-apple(bullock's heart), raw",0.0,0.1,0.1,0.0,2.4,9.9,20.0
+133,"Date, red, dried",0.2,0.0,0.1,0.0,3.2,0.0,0.0
+134,"Date, yellow",0.1,0.0,0.1,0.0,3.8,4.7,89.0
+130,Durian,0.0,0.0,0.0,0.0,3.8,8.1,0.0
+104,Grape,0.1,0.0,0.1,0.0,2.5,3.1,59.0
+135,Grapefruit,0.0,0.0,0.0,0.0,1.1,7.3,0.0
+105,"Grapes, pale green",0.1,0.0,0.1,0.0,2.7,3.3,63.0
+106,"Guavas, common, raw",0.3,0.1,0.4,0.0,5.4,8.9,0.0
+107,"Jackfruit, raw",0.1,0.0,0.1,0.0,1.6,6.5,0.0
+109,"Lemon, raw, without peel",0.0,0.0,0.1,0.0,2.8,0.3,0.0
+110,"Limes, raw",0.0,0.0,0.1,0.0,2.8,1.7,0.0
+111,Mango juice,0.0,0.0,0.0,0.0,0.8,11.0,8.0
+112,"Mango, ripe, fresh-EP",0.1,0.1,0.1,0.0,1.8,9.9,20.0
+113,"Mango, unripe",0.1,0.1,0.1,0.0,1.8,4.9,20.0
+108,"Orange juice, concentrated, unsweetened",0.0,0.0,0.0,0.0,0.2,8.4,0.0
+114,"Orange, raw - AP",0.0,0.0,0.0,0.0,2.4,4.2,0.0
+115,"Papaya, ripe",0.0,0.0,0.0,0.0,1.8,1.8,0.0
+116,"Papaya, unripe",0.0,0.0,0.0,0.0,1.8,1.8,0.0
+117,"Passion, fruit",0.0,0.0,0.0,0.0,2.0,5.6,0.0
+127,Peach,0.0,0.0,0.0,0.0,1.8,5.0,0.0
+118,"Pears, raw",0.0,0.0,0.0,0.0,3.1,9.8,55.0
+120,Pineapple juice,0.0,0.0,0.1,0.0,1.2,3.1,0.0
+,,,,,,,,
+F1,Fruits and Fruit Juice,,,,,,,
+,Macronutrients,,ENERGY_KC ,PROCNT,A_PROTEI ,MFP_PROT,FAT,CHOCDF
+,,,Kcal,g,g,g,g,g
+119,"Pineapple, raw, all variety",,48.0,0.5,0.0,0.0,0.1,12.6
+121,"Plums, raw",,46.0,0.7,0.0,0.0,0.3,11.4
+128,Raspberry,,52.0,0.7,0.0,0.0,0.4,12.8
+132,"Soursop, raw",,66.0,1.0,0.0,0.0,0.3,16.8
+122,Tamarind,,270.0,2.9,0.0,0.0,0.5,71.2
+123,"Tamarind, fruit, fresh",,59.0,0.2,0.0,0.0,0.4,15.3
+124,"Tangerines, raw",,53.0,0.8,0.0,0.0,0.3,13.3
+125,"Watermelon, raw",,30.0,0.6,0.0,0.0,0.2,7.6
+,,,,,,,,
+F2,Fruit-based local dishes,,,,,,,
+603,Apple juice,South African food tables,53.0,0.1,0.0,0.0,0.0,13.3
+604,Avocado juice,One recipe,104.5,0.6,0.0,0.0,5.0,15.9
+601,Grape juice,South African food tables,69.9,0.1,0.0,0.0,0.1,18.1
+610,Mixed fruit jam,Recipe website,261.0,0.4,0.0,0.0,0.0,69.3
+602,Mixed fruit juice,One recipe,45.0,0.7,0.0,0.0,2.2,6.6
+607,Papaya juice,One recipe,58.3,0.4,0,0,0.1,14.9
+126,Passion juice,One recipe,110.1,0.3,0.0,0.0,0.0,28.4
+606,Water melon juice,One recipe,111.8,1.3,0.0,0.0,0.9,16.2
+,,,,,,,,
+F1,Fruits and Fruit Juice,,,,,,,
+,Macronutrients,FASAT,FAMS,FAPU,CHOLE,FIB,SUCS,PHYTAC
+,,g,g,g, mg,g,g,mg
+119,"Pineapple, raw, all variety",0.0,0.0,0.0,0.0,1.4,9.3,0.0
+121,"Plums, raw",0.0,0.1,0.0,0.0,1.4,9.9,63.0
+128,Raspberry,0.0,0.0,0.2,0.0,5.0,0.4,0.0
+132,"Soursop, raw",0.1,0.1,0.1,0.0,3.3,13.5,20.0
+122,Tamarind,0.2,0.0,0.1,0.0,3.6,0.0,0.0
+123,"Tamarind, fruit, fresh",0.1,0.0,0.1,0.0,2.7,3.3,63.0
+124,"Tangerines, raw",0.0,0.1,0.1,0.0,1.8,10.6,0.0
+125,"Watermelon, raw",0.0,0.0,0.1,0.0,0.4,7.6,0.0
+,,,,,,,,
+F2,Fruit-based local dishes,,,,,,,
+603,Apple juice,0.0,0.0,0.0,0.0,0.1,0.0,55.0
+604,Avocado juice,0.8,3.1,0.6,0.0,1.9,13.1,0.0
+601,Grape Juice,0.0,0.0,0.0,0.0,0.8,13.9,19.7
+610,Mixed fruit jam,0.0,0.0,0.0,0.0,0.8,64.1,0.0
+602,Mixed Fruit Juice,0.3,1.4,0.3,0.0,1.9,1.8,0.0
+607,Papaya Juice,0,0,0,0,1.2,9.3,0
+126,Passion Juice,0.0,0.0,0.0,0.0,0.8,25.5,0.0
+606,Watermelon juice,0.4,0.2,0.0,0.0,1.1,18.1,0.0
+,,,,,,,,
+F3,Vegetables ,,,,,,,
+,Macronutrients,,ENERGY_KC ,PROCNT,A_PROTEI ,MFP_PROT,FAT,CHOCDF
+,,,Kcal,g,g,g,g,g
+401,"Amaranth, leaves, raw",,23.0,8.5,0.0,0.0,0.5,8.5
+424,"Bean, cluster",,42.0,2.7,0.0,0.0,0.1,7.8
+425,"Bean, french ",,35.0,1.9,0.0,0.0,0.3,7.9
+431,"Cabbage, chinese, raw",,15.0,2.3,0.0,0.0,0.2,2.1
+402,"Cabbage, cooked",,14.0,0.6,0.0,0.0,0.3,2.8
+403,"Cabbage, raw, green, white",,25.0,1.3,0.0,0.0,0.1,5.8
+430,"Carrot, juice",,45.0,1.1,0.0,0.0,0.2,10.5
+404,"Carrots, raw",,41.0,0.9,0.0,0.0,0.2,9.6
+409,Cassava leaf,,37.0,3.7,0.0,0.0,0.2,7.3
+405,"Cauliflower, cooked without salt",,12.0,0.7,0.0,0.0,0.1,2.6
+406,"Cauliflower, raw",,25.0,2.0,0.0,0.0,0.1,5.3
+427,"Chili, green",,21.0,0.9,0.0,0.0,0.1,5.1
+410,Cowpea leaf,,37.0,9.3,0.0,0.0,0.8,7.3
+407,"Cucumber, with peel, raw",,15.0,0.7,0.0,0.0,0.1,3.6
+408,"Egg plant, raw",,24.0,1.0,0.0,0.0,0.2,5.7
+411,"Green medium, leaf",,15.0,2.3,0.0,0.0,0.2,2.1
+429,Green pepper (capsicum),,19.0,0.0,1.0,0.0,0.0,0.3
+426,"Hare lettuce, (mchunga)",,10.7,1.0,0.0,0.0,0.3,1.0
+414,Lettuce,,13.0,1.0,0.0,0.0,0.2,2.1
+415,Mushroom,,27.0,2.2,0.0,0.0,0.5,5.1
+416,"Okra, raw",,31.0,2.0,0.0,0.0,0.1,7.0
+417,"Onion, raw",,40.0,1.3,0.0,0.0,0.2,9.2
+418,"Pea, green, fresh",,84.0,5.4,0.0,0.0,0.2,15.6
+433,"Pepper dried or fresh, hot",,27.0,1.0,0.0,0.0,0.3,5.8
+412,"Pumpkin leaf, raw",,19.0,7.0,0.0,0.0,0.7,9.0
+419,"Pumpkin, cooked",,20.0,0.5,0.0,0.0,0.3,4.4
+432,"Salad, green",,36.0,3.5,0.0,0.0,0.9,7.1
+420,"Spinach, cooked",,23.0,3.0,0.0,0.0,0.3,3.8
+428,Sweet potato leaf,,35.0,4.8,0.0,0.0,0.3,6.4
+434,"Swiss chard, raw",,19.0,1.8,0.0,0.0,0.2,3.7
+413,"Taro leaf, raw",,42.0,5.0,0.0,0.0,0.7,6.7
+421,"Tomato, bitter (African egg plant)",,22.0,1.0,0.0,0.0,0.4,4.5
+422,"Tomato, green",,21.0,0.9,0.0,0.0,0.3,4.6
+423,"Tomato, ripe",,21.0,0.9,0.0,0.0,0.3,4.6
+F3,Vegetables ,,,,,,,
+,Macronutrients,FASAT,FAMS,FAPU,CHOLE,FIB,SUCS,PHYTAC
+,,g,g,g, mg,g,g,mg
+401,"Amaranth, leaves, raw",0.1,0.0,0.1,0.0,4.2,0.0,42.0
+424,"Bean, cluster",0.0,0.0,0.1,0.0,2.8,2.4,14.0
+425,"Bean, french ",0.1,0.0,0.1,0.0,3.2,0.3,91.0
+431,"Cabbage,, chinese, raw",0.0,0.1,0.0,0.0,2.0,0.0,42.0
+402,"Cabbage, cooked",0.1,0.0,0.1,0.0,1.8,0.3,0.0
+403,"Cabbage, raw, green, white",0.0,0.0,0.0,0.0,2.5,3.2,0.0
+430,"Carrot, juice",0.0,0.0,0.1,0.0,3.3,3.6,9.0
+404,"Carrots, raw",0.0,0.0,0.1,0.0,2.8,4.7,9.0
+409,Cassava leaf,0.0,0.0,0.1,0.0,0.6,0.0,42.0
+405,"Cauliflower, cooked without salt",0.0,0.0,0.0,0.0,1.1,0.2,0.0
+406,"Cauliflower, raw",0.0,0.0,0.1,0.0,2.5,2.4,0.0
+427,"Chili, green",0.0,0.0,0.0,0.0,1.3,3.1,35.0
+410,Cowpea leaf,0.0,0.0,0.1,0.0,3.3,0.0,42.0
+407,"Cucumber, with peel, raw",0.0,0.0,0.0,0.0,0.5,1.7,0.0
+408,"Egg plant, raw",0.0,0.0,0.1,0.0,3.4,2.4,0.0
+411,"Green medium, leaf",0.0,0.1,0.0,0.0,2.0,0.0,42.0
+429,Green pepper (capsicum),4.5,0.1,0.1,0.2,0.0,1.5,70.0
+426,"Hare lettuce, (mchunga)",0.0,0.1,0.0,0.0,0.4,0.0,42.0
+414,Lettuce,0.0,0.0,0.1,0.0,1.4,0.1,0.0
+415,Mushroom,0.1,0.0,0.2,0.0,2.2,0.2,0.0
+416,"Okra, raw",0.0,0.0,0.0,0.0,3.2,1.2,77.0
+417,"Onion, raw",0.0,0.0,0.1,0.0,1.3,1.2,0.0
+418,"Pea, green, fresh",0.0,0.0,0.1,0.0,5.5,4.8,28.0
+433,"Pepper dried or fresh, hot",0.1,0.1,0.1,0.0,1.7,0.1,35.0
+412,"Pumpkin leaf, raw",0.2,0.1,0.0,0.0,4.4,0.0,42.0
+419,"Pumpkin, cooked",0.1,0.0,0.2,0.0,1.4,0.1,0.0
+432,"Salad, green",0.1,0.1,0.4,0.0,4.4,0.4,47.0
+420,"Spinach, cooked",0.0,0.0,0.1,0.0,2.4,0.0,0.0
+428,Sweet potato leaf,0.0,0.1,0.0,0.0,2.0,0.0,42.0
+434,"Swiss chard, raw",0.0,0.0,0.1,0.0,1.6,1.1,42.0
+413,"Taro leaf, raw",0.2,0.1,0.3,0.0,3.7,3.0,0.0
+421,"Tomato, bitter (African egg plant)",0.1,0.0,0.2,0.0,2.8,0.5,6.0
+422,"Tomato, green",0.0,0.1,0.1,0.0,1.1,0.0,6.0
+423,"Tomato, ripe",0.0,0.1,0.1,0.0,1.1,0.0,6.0
+F4,Vegetable-based local dishes,,,,,,,
+,Macronutrients,,ENERGY_KC ,PROCNT,A_PROTEI ,MFP_PROT,FAT,CHOCDF
+,,,Kcal,g,g,g,g,g
+755,Cabbage relish with Oil,One recipe,34.1,0.7,0.1,0.0,2.1,3.5
+754,"Cabbage, onion salad",One recipe,27.8,1.2,0.0,0.0,0.3,6.2
+756,Cassava leaf relish with groundnuts,One recipe,113.1,6.4,0,0,6.8,9.9
+757,Cassava leaf relish with coconut milk,Four recipes,70.9,2.8,0.0,0.0,4.7,6.7
+759,Cow pea leaf relish with coconut milk ,Two  recipes,80.3,2.5,0.0,0.0,6.0,6.4
+779,Cow pea leaf relish with groundnuts,One recipe,79.3,4.8,0.0,0.0,4.2,8.3
+784,Egg plant relish ,South African food tables,77.3,1.2,0.0,0.0,4.7,7.9
+763,"Green leaf, medium, relish with coconut milk",One recipe,107.7,2.8,0.0,0.0,9.2,5.8
+762,"Green leaf, medium relish with groundnuts",One recipe,15.0,1.0,0.0,0.0,0.6,2.0
+760,"Green leaf, medium, relish without oil",One recipe,5.3,0.8,0.0,0.0,7.0,0.7
+761,"Green leaf, medium, relish with oil",One recipe,86.1,1.0,0.0,0.0,14.5,1.0
+766,Green peas relish without oil,One recipe,63.5,3.9,0.0,0.0,0.2,12.0
+767,Green peas relish with oil,One recipe,82.5,3.8,0.0,0.0,2.6,11.8
+778,Green peas relish with oil and coconut milk,Two  recipes,125.6,3.6,0.0,0.0,"7,8",11.9
+782,Green peas relish with coconut milk,Two  recipes,120.2,3.7,0.0,0.0,6.6,12.7
+786,Hare lettuce (mchunga),One recipe,169.6,1.0,0.0,0.0,17.4,4.5
+783,Okra relish without oil,One recipe,16.7,0.9,0.0,0.0,0.2,3.7
+775,Okra relish with oil,Two  recipes,74.3,0.8,0.1,0.0,6.2,4.7
+765,Okra with coconut milk,One recipe,51.0,1.2,0.0,0.0,3.2,5.7
+781,"Okra, fried",Two  recipes,106.2,1.0,0.0,0.0,10.2,4.5
+780,Sweet potato leaf relish with coconut milk,One recipe,166.1,3.7,0.0,0.0,13.7,10.6
+777,Potato leaf relish with milk ,One recipe,67.7,6.5,1.2,0.0,2.6,6.9
+764,Potato leaf relish with oil ,One recipe,131.0,3.4,0.0,0.0,11.0,7.4
+772,Potato samosa ,worldfoods ,194.0,3.0,0.0,0.0,9.2,24.4
+769,Pumpkin leaf relish without oil,One recipe,16.8,0.8,0.0,0.0,0.2,3.7
+768,Pumpkin leaf relish with oil,One recipe,63.8,0.7,0.0,0.0,5.7,3.5
+770,Spinach relish with groundnut and oil,One recipe,149.0,1.7,0.0,0.0,15.2,3.7
+752,Spinach relish without oil,One recipe,43.5,3.3,0.0,0.0,0.5,8.8
+753,Spinach relish with oil,Seven  recipes,108.0,2.7,0.0,0.0,9.0,6.1
+771,Spinach relish with sesame seeds,One recipe,61.8,3.2,0.0,0.0,3.8,5.5
+785,Tomato relish,South African food tables,34.0,1.1,0.0,0.0,0.3,5.2
+F4,Vegetable-based local dishes,,,,,,,
+,Macronutrients,FASAT,FAMS,FAPU,CHOLE,FIB,SUCS,PHYTAC
+,,g,g,g, mg,g,g,mg
+755,Cabbage relish with oil,1.8,0.1,0.1,0.0,1.4,0.6,5.2
+754,"Cabbage, onion salad",0.1,0.0,0.2,0.0,2.2,0.3,0.3
+756,Cassava leaves relish with groundnuts,0.9,3.3,2.2,0.0,2.0,0.8,263.7
+757,Cassava leaves relish with coconut milk,4.0,0.2,0.1,0.0,1.6,0.0,70.0
+759,Cow pea leaf relish with coconut milk ,5.2,0.3,0.1,0.1,1.9,0.0,77.5
+779,Cow pea leaf relish with groundnuts,0.5,2.0,1.4,0.0,1.6,0.4,168.4
+784,Egg plant relish ,2.0,0.6,1.7,0.0,2.2,1.7,16.5
+763,"Green leaf, medium, relish with coconut milk",8.0,0.5,0.1,0.0,4.1,0.0,121.5
+762,"Green leaf, medium relish with groundnuts",0.1,0.3,0.2,0.0,0.8,0.0,27.8
+760,"Green leaf, medium, relish without oil",0.0,0.0,0.0,0.0,0.7,0.0,7.0
+761,"Green leaf, medium, relish with oil",7.9,0.5,0.1,0.0,0.9,0.0,22.2
+766,Green peas relish without oil,0.0,0.0,0.1,0.0,4.1,3.2,20.9
+767,Green peas relish with oil,2.0,0.2,0.1,0.0,3.9,3.2,19.8
+778,Green peas relish with oil and coconut milk,6.7,0.4,0.3,0.0,4.6,2.4,79.1
+782,Green peas relish with coconut milk,5.7,0.3,0.2,0.0,5.1,3.0,69.8
+786,Hare lettuce (mchunga),14.8,1.1,0.4,0,0.9,0.3,14.7
+783,Okra relish without oil,0.1,0.0,0.1,0.1,1.9,0.1,39.7
+775,Okra relish with oil,5.6,0.4,0.2,0.0,1.3,0.5,24.2
+765,Okra with coconut milk,2.7,0.1,0.1,0.0,0.0,2.0,54.0
+781,"Okra, fried",8.7,0.6,0.2,0.0,1.5,0.1,38.5
+780,Sweet potato leaf relish with coconut milk,11.9,0.6,0.2,0.0,7.1,0.0,188.4
+777,Potato leaf relish with milk ,1.4,0.8,0.1,8.0,4.0,0.0,53.4
+764,Potato leaf relish with oil ,9.4,0.5,0.4,0.0,0.7,0.2,84.0
+772,Potato samosa ,1.3,2.1,5.3,0.0,1.1,0.2,91.0
+769,Pumpkin leaf relish without oil,0.0,0.0,0.1,0.0,1.8,0.2,21.2
+768,Pumpkin leaf relish with oil,4.9,0.3,0.2,0.0,1.7,0.2,20.0
+770,Spinach relish with groundnut and oil,12.5,1.2,0.5,0.0,0.5,0.2,0.6
+752,Spinach relish without oil,0.0,0.0,0.1,0.0,1.2,0.1,35.1
+753,Spinach relish with oil,7.8,0.5,0.2,0.0,0.6,0.1,30
+771,Spinach relish with sesame seeds,0.5,1.4,1.7,0.0,1.6,0.1,398.2
+785,Tomato relish,0.1,0.1,0.1,0.0,1.7,0.0,20.9
