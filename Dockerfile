@@ -64,9 +64,10 @@ RUN chown -R www-data:www-data /var/www/html && \
 # Generate app key (will use APP_KEY env var in production)
 RUN php artisan key:generate --force || true
 
-# Cache configuration for production
-RUN php artisan config:cache && php artisan route:cache || true
+# DO NOT cache routes during build - only cache config
+RUN php artisan config:cache || true
 
 EXPOSE 80
 
-CMD ["apache2-foreground"]
+# Start Apache with command that clears caches at runtime
+CMD sh -c 'php artisan route:clear && php artisan cache:clear && apache2-foreground'
