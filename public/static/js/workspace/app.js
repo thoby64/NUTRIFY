@@ -139,15 +139,21 @@ const WorkspaceApp = (() => {
                     </span>
                     <nav class="workspace-nav">
                         <div class="workspace-nav-label">Pages</div>
-                        ${roleNav.map((item) => `
-                            <a class="workspace-nav-item ${(item.page === page || (page === 'plan-workspace' && item.page === 'meal-planning')) ? 'active' : ''}" href="${item.href}">
+                        ${roleNav.map((item) => {
+                            let href = item.href;
+                            if (!href.startsWith('/')) {
+                                href = item.href === './' ? `/${role}` : `/${role}/${item.href}`;
+                            }
+                            return `
+                            <a class="workspace-nav-item ${(item.page === page || (page === 'plan-workspace' && item.page === 'meal-planning')) ? 'active' : ''}" href="${href}">
                                 <i class="fas ${item.icon}"></i>
                                 <span class="workspace-nav-copy">
                                     <strong>${WorkspaceCore.escapeHtml(item.label)}</strong>
                                     <span>${WorkspaceCore.escapeHtml(item.description)}</span>
                                 </span>
                             </a>
-                        `).join('')}
+                        `;
+                        }).join('')}
                     </nav>
                     <div class="workspace-sidebar-foot">
                         <h2>Nutrition Planning</h2>
@@ -375,11 +381,11 @@ const WorkspaceApp = (() => {
 
     async function renderAdminDashboard() {
         const [foods, foodGroups, nutrients, plans, users] = await Promise.all([
-            WorkspaceCore.apiJson('/foods?limit=1'),
-            WorkspaceCore.apiJson('/food-groups?limit=1'),
-            WorkspaceCore.apiJson('/nutrients?limit=1'),
-            WorkspaceCore.apiJson('/plans'),
-            WorkspaceCore.apiJson('/admin/users?limit=5')
+            WorkspaceCore.apiJson('/api/v1/foods?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/food-groups?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/nutrients?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/plans'),
+            WorkspaceCore.apiJson('/api/v1/admin/users?limit=5')
         ]);
 
         setPageBody(`
@@ -442,12 +448,12 @@ const WorkspaceApp = (() => {
 
     async function renderManagerDashboard() {
         const [foods, foodGroups, nutrients, plans, nutritionists, analytics] = await Promise.all([
-            WorkspaceCore.apiJson('/foods?limit=1'),
-            WorkspaceCore.apiJson('/food-groups?limit=1'),
-            WorkspaceCore.apiJson('/nutrients?limit=1'),
-            WorkspaceCore.apiJson('/plans'),
-            WorkspaceCore.apiJson('/manager/nutritionists?limit=5'),
-            WorkspaceCore.apiJson('/manager/analytics')
+            WorkspaceCore.apiJson('/api/v1/foods?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/food-groups?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/nutrients?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/plans'),
+            WorkspaceCore.apiJson('/api/v1/manager/nutritionists?limit=5'),
+            WorkspaceCore.apiJson('/api/v1/manager/analytics')
         ]);
 
         setPageBody(`
@@ -510,8 +516,8 @@ const WorkspaceApp = (() => {
 
     async function renderNutritionistDashboard() {
         const [foods, nutrients, clients, plans] = await Promise.all([
-            WorkspaceCore.apiJson('/foods?limit=1'),
-            WorkspaceCore.apiJson('/nutrients?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/foods?limit=1'),
+            WorkspaceCore.apiJson('/api/v1/nutrients?limit=1'),
             WorkspaceCore.apiJson('/api/v2/planning/clients'),
             WorkspaceCore.apiJson('/api/v2/planning/plans')
         ]);
@@ -607,8 +613,8 @@ const WorkspaceApp = (() => {
         async function loadFoods() {
             results.innerHTML = '<div class="workspace-empty">Loading foods…</div>';
             const [groups, foods] = await Promise.all([
-                WorkspaceCore.apiJson(`/food-groups?limit=200&search=`),
-                WorkspaceCore.apiJson(`/foods?limit=150${searchInput.value.trim() ? `&search=${encodeURIComponent(searchInput.value.trim())}` : ''}${groupSelect.value ? `&food_group_id=${encodeURIComponent(groupSelect.value)}` : ''}`)
+                WorkspaceCore.apiJson(`/api/v1/food-groups?limit=200&search=`),
+                WorkspaceCore.apiJson(`/api/v1/foods?limit=150${searchInput.value.trim() ? `&search=${encodeURIComponent(searchInput.value.trim())}` : ''}${groupSelect.value ? `&food_group_id=${encodeURIComponent(groupSelect.value)}` : ''}`)
             ]);
 
             const currentOptions = new Set(Array.from(groupSelect.options).map((option) => option.value));
@@ -649,7 +655,7 @@ const WorkspaceApp = (() => {
     }
 
     async function renderFoodGroups() {
-        const groups = await WorkspaceCore.apiJson('/food-groups?limit=200');
+        const groups = await WorkspaceCore.apiJson('/api/v1/food-groups?limit=200');
         setPageBody(`
             <article class="workspace-panel">
                 <div class="workspace-panel-head">
@@ -702,7 +708,7 @@ const WorkspaceApp = (() => {
         async function loadNutrients() {
             results.innerHTML = '<div class="workspace-empty">Loading nutrients…</div>';
             const [nutrients, planningMeta] = await Promise.all([
-                WorkspaceCore.apiJson('/nutrients?limit=1000'),
+                WorkspaceCore.apiJson('/api/v1/nutrients?limit=1000'),
                 WorkspaceCore.apiJson('/api/v2/planning/meta'),
             ]);
             const aliasMap = planningMeta.condition_aliases || {};
@@ -760,7 +766,7 @@ const WorkspaceApp = (() => {
     }
 
     async function renderNutrientTypes() {
-        const nutrientTypes = await WorkspaceCore.apiJson('/nutrient-types?limit=100');
+        const nutrientTypes = await WorkspaceCore.apiJson('/api/v1/nutrient-types?limit=100');
         setPageBody(`
             <article class="workspace-panel">
                 <div class="workspace-panel-head">
@@ -1064,7 +1070,7 @@ const WorkspaceApp = (() => {
             const formData = new FormData(form);
 
             try {
-                await WorkspaceCore.apiJson('/admin/users', {
+                await WorkspaceCore.apiJson('/api/v1/admin/users', {
                     method: 'POST',
                     body: {
                         username: formData.get('username'),
@@ -1359,7 +1365,7 @@ const WorkspaceApp = (() => {
             const formData = new FormData(form);
 
             try {
-                await WorkspaceCore.apiJson('/manager/nutritionists', {
+                await WorkspaceCore.apiJson('/api/v1/manager/nutritionists', {
                     method: 'POST',
                     body: {
                         username: formData.get('username'),
