@@ -110,7 +110,7 @@ const WorkspaceApp = (() => {
         if (!root || !role || !page || !user) return;
 
         renderShell(root, role, page, user);
-        bindShellEvents();
+        bindShellEvents(role);
         await loadPage({ role, page, user });
     }
 
@@ -191,7 +191,7 @@ const WorkspaceApp = (() => {
         `;
     }
 
-    function bindShellEvents() {
+    function bindShellEvents(role) {
         // Profile dropdown menu
         const userDropdown = document.getElementById('workspaceUserDropdown');
         const userMenuBtn = document.getElementById('workspaceUserMenuBtn');
@@ -236,7 +236,9 @@ const WorkspaceApp = (() => {
 
         profileLink?.addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = `/${role}/profile`;
+            if (role) {
+                window.location.href = `/${role}/profile`;
+            }
         });
 
         document.getElementById('workspaceLogoutBtn')?.addEventListener('click', (e) => {
