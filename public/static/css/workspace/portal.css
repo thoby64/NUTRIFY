@@ -67,6 +67,15 @@ body.workspace-body {
     border-radius: 18px;
     background: linear-gradient(135deg, rgba(21, 115, 71, 1) 0%, rgba(217, 119, 6, 0.95) 100%);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.workspace-brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 4px;
 }
 
 .workspace-brand-copy h1 {
@@ -477,6 +486,10 @@ body.workspace-body {
         border-radius: 14px;
     }
     
+    .workspace-brand-mark img {
+        padding: 3px;
+    }
+    
     .workspace-brand-copy h1 {
         font-size: 1rem;
     }
@@ -496,6 +509,10 @@ body.workspace-body {
         width: 40px;
         height: 40px;
         border-radius: 12px;
+    }
+    
+    .workspace-brand-mark img {
+        padding: 2px;
     }
     
     .workspace-brand-copy h1 {
