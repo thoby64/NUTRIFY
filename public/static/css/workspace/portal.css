@@ -470,12 +470,40 @@ body.workspace-body {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
+    
+    .workspace-brand-mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+    }
+    
+    .workspace-brand-copy h1 {
+        font-size: 1rem;
+    }
+    
+    .workspace-brand-copy p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
     .workspace-stat-grid {
         grid-template-columns: 1fr;
         gap: 12px;
+    }
+    
+    .workspace-brand-mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+    
+    .workspace-brand-copy h1 {
+        font-size: 0.95rem;
+    }
+    
+    .workspace-brand-copy p {
+        font-size: 0.75rem;
     }
 }
 

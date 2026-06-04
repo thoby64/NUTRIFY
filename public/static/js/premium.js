@@ -56,6 +56,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Close mobile menu when a nav link is clicked
+    if (navbarMenu) {
+        const navLinks = navbarMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (navbarMenu.classList.contains('active')) {
+                    navbarMenu.classList.remove('active');
+                    if (mobileMenuToggle) {
+                        mobileMenuToggle.classList.remove('active');
+                    }
+                }
+            });
+        });
+    }
+    
     // Observe elements for scroll animations
     const observerOptions = {
         threshold: 0.1,
