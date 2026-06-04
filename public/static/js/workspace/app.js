@@ -125,10 +125,10 @@ const WorkspaceApp = (() => {
                     <div class="workspace-brand">
                         <div class="d-flex align-items-center gap-3">
                             <span class="workspace-brand-mark">
-                                <i class="fas fa-leaf"></i>
+                                <img src="/images/logo/nutri.png" alt="Nutriqube logo" />
                             </span>
                             <div class="workspace-brand-copy">
-                                <h1>NutriAnalytics</h1>
+                                <h1>Nutriqube</h1>
                                 <p>${WorkspaceCore.escapeHtml(currentRoleLabel)} workspace</p>
                             </div>
                         </div>

@@ -124,7 +124,7 @@ class SimpleXlsxWriter
 
         return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
             .'<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'
-            .'<dc:creator>NutriAnalytics</dc:creator><cp:lastModifiedBy>NutriAnalytics</cp:lastModifiedBy>'
+            .'<dc:creator>Nutriqube</dc:creator><cp:lastModifiedBy>Nutriqube</cp:lastModifiedBy>'
             .'<dcterms:created xsi:type="dcterms:W3CDTF">'.$timestamp.'</dcterms:created><dcterms:modified xsi:type="dcterms:W3CDTF">'.$timestamp.'</dcterms:modified>'
             .'</cp:coreProperties>';
     }
@@ -133,7 +133,7 @@ class SimpleXlsxWriter
     {
         return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
             .'<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">'
-            .'<Application>NutriAnalytics</Application><HeadingPairs><vt:vector size="2" baseType="variant"><vt:variant><vt:lpstr>Worksheets</vt:lpstr></vt:variant><vt:variant><vt:i4>'.count($sheets).'</vt:i4></vt:variant></vt:vector></HeadingPairs>'
+            .'<Application>Nutriqube</Application><HeadingPairs><vt:vector size="2" baseType="variant"><vt:variant><vt:lpstr>Worksheets</vt:lpstr></vt:variant><vt:variant><vt:i4>'.count($sheets).'</vt:i4></vt:variant></vt:vector></HeadingPairs>'
             .'<TitlesOfParts><vt:vector size="'.count($sheets).'" baseType="lpstr">'.collect($sheets)->map(fn ($sheet) => '<vt:lpstr>'.$this->escape($sheet['name']).'</vt:lpstr>')->implode('').'</vt:vector></TitlesOfParts>'
             .'</Properties>';
     }

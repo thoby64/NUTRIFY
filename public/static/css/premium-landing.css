@@ -297,6 +297,7 @@ a:hover {
     border: none;
     cursor: pointer;
     padding: 8px;
+    z-index: 10;
 }
 
 .mobile-menu-toggle span {
@@ -926,6 +927,19 @@ a:hover {
         display: flex;
     }
     
+    .navbar-actions {
+        gap: 8px;
+    }
+    
+    .navbar-actions .btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    
+    .navbar-actions .btn-secondary {
+        padding: 8px 12px;
+    }
+    
     .hero {
         padding: 80px 24px;
     }
@@ -986,7 +1000,20 @@ a:hover {
 @media (max-width: 480px) {
     .navbar-container {
         padding: 12px 16px;
-        gap: 16px;
+        gap: 8px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .navbar-brand {
+        flex: 1 1 auto;
+        min-width: 120px;
+    }
+    
+    .mobile-menu-toggle {
+        order: 2;
+        flex: 0 0 auto;
+        padding: 4px;
     }
     
     .brand-name {
@@ -994,7 +1021,32 @@ a:hover {
     }
     
     .navbar-actions {
-        display: none;
+        display: flex !important;
+        gap: 6px;
+        order: 3;
+        width: 100%;
+        margin-top: 8px;
+        flex-wrap: nowrap;
+    }
+    
+    .navbar-actions .btn {
+        flex: 1 1 auto;
+        font-size: 12px;
+        padding: 8px 10px;
+        white-space: nowrap;
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+    }
+    
+    .navbar-actions .btn-secondary {
+        padding: 8px 10px;
+    }
+    
+    .navbar-actions .btn-primary {
+        padding: 8px 10px;
     }
     
     .hero {
