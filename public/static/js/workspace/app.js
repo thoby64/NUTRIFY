@@ -236,7 +236,7 @@ const WorkspaceApp = (() => {
 
         profileLink?.addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = 'profile';
+            window.location.href = `/${role}/profile`;
         });
 
         document.getElementById('workspaceLogoutBtn')?.addEventListener('click', (e) => {
