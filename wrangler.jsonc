@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "my-worker",
+  "name": "nutrify",
   "compatibility_date": "2026-08-20",
   "observability": {
     "enabled": true
